@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OOXX Game</title>
+
+    <script>
+        var turn = 0;
+        function SetPoint(obj) {
+            if (obj.innerText == "" && turn == 0) {
+                obj.innerText = 'O';
+                turn = 1;
+                IsGameWinner();
+            }
+            else if (obj.innerText == "" && turn == 1) {
+                obj.innerText = 'X';
+                turn = 0;
+                IsGameWinner();
+            }
+        }
+        function IsGameWinner() {
+            var columnArray = [document.getElementById("c1"), document.getElementById("c2"), document.getElementById(
+                    "c3"),
+                document.getElementById("c4"), document.getElementById("c5"), document.getElementById("c6"),
+                document.getElementById("c7"), document.getElementById("c8"), document.getElementById("c9")
+            ];
+            if ((columnArray[0].innerHTML == "O" && columnArray[1].innerHTML == "O" && columnArray[2].innerHTML ==
+                    "O") ||
+                (columnArray[0].innerHTML == "O" && columnArray[3].innerHTML == "O" && columnArray[6].innerHTML ==
+                    "O") ||
+                (columnArray[0].innerHTML == "O" && columnArray[4].innerHTML == "O" && columnArray[8].innerHTML ==
+                    "O") ||
+                (columnArray[1].innerHTML == "O" && columnArray[4].innerHTML == "O" && columnArray[7].innerHTML ==
+                    "O") ||
+                (columnArray[2].innerHTML == "O" && columnArray[4].innerHTML == "O" && columnArray[6].innerHTML ==
+                    "O") ||
+                (columnArray[2].innerHTML == "O" && columnArray[5].innerHTML == "O" && columnArray[8].innerHTML ==
+                    "O") ||
+                (columnArray[3].innerHTML == "O" && columnArray[4].innerHTML == "O" && columnArray[5].innerHTML ==
+                    "O") ||
+                (columnArray[6].innerHTML == "O" && columnArray[7].innerHTML == "O" && columnArray[8].innerHTML == "O")
+            ) {
+                alert("Winner is O !");
+                location.reload();
+            } 
+            else if ((columnArray[0].innerHTML == "X" && columnArray[1].innerHTML == "X" && columnArray[2]
+                    .innerHTML == "X") ||
+                (columnArray[0].innerHTML == "X" && columnArray[3].innerHTML == "X" && columnArray[6].innerHTML ==
+                    "X") ||
+                (columnArray[0].innerHTML == "X" && columnArray[4].innerHTML == "X" && columnArray[8].innerHTML ==
+                    "X") ||
+                (columnArray[1].innerHTML == "X" && columnArray[4].innerHTML == "X" && columnArray[7].innerHTML ==
+                    "X") ||
+                (columnArray[2].innerHTML == "X" && columnArray[4].innerHTML == "X" && columnArray[6].innerHTML ==
+                    "X") ||
+                (columnArray[2].innerHTML == "X" && columnArray[5].innerHTML == "X" && columnArray[8].innerHTML ==
+                    "X") ||
+                (columnArray[3].innerHTML == "X" && columnArray[4].innerHTML == "X" && columnArray[5].innerHTML ==
+                    "X") ||
+                (columnArray[6].innerHTML == "X" && columnArray[7].innerHTML == "X" && columnArray[8].innerHTML == "X")
+            ) {
+                alert("Winner is X !");
+                location.reload();
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <table id='table1' style="border:3px #FFD382 dashed;width: 300px;height: 300px;" cellpadding="10" border='1'>
+        <caption>
+            <h4>OOXX遊戲</h4>
+        </caption>
+
+        <tbody>
+
+            <tr>
+                <td style="height:50px;width:50px;" align='center' valign="middle" id="c1"
+                    onclick="SetPoint(document.getElementById('c1'))">&#32;</td>
+                <td style="height:50px;width:50px;" align='center' valign="middle" id="c2"
+                    onclick="SetPoint(document.getElementById('c2'))">&#32;</td>
+                <td style="height:50px;width:50px;" align='center' valign="middle" id="c3"
+                    onclick="SetPoint(document.getElementById('c3'))">&#32;</td>
+            </tr>
+            <tr>
+                <td style="height:50px;width:50px;" align='center' valign="middle" id="c4"
+                    onclick="SetPoint(document.getElementById('c4'))">&#32;</td>
+                <td style="height:50px;width:50px;" align='center' valign="middle" id="c5"
+                    onclick="SetPoint(document.getElementById('c5'))">&#32;</td>
+                <td style="height:50px;width:50px;" align='center' valign="middle" id="c6"
+                    onclick="SetPoint(document.getElementById('c6'))">&#32;</td>
+            <tr>
+                <td style="height:50px;width:50px;" align='center' valign="middle" id="c7"
+                    onclick="SetPoint(document.getElementById('c7'))">&#32;</td>
+                <td style="height:50px;width:50px;" align='center' valign="middle" id="c8"
+                    onclick="SetPoint(document.getElementById('c8'))">&#32;</td>
+                <td style="height:50px;width:50px;" align='center' valign="middle" id="c9"
+                    onclick="SetPoint(document.getElementById('c9'))">&#32;</td>
+            </tr>
+        </tbody>
+    </table>
+    
+
+</body>
+
+</html>
