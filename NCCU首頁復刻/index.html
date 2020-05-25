@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCCU - 國立政治大學</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark py-0 d-md-flex d-none" id="pc-top1">
+            <div class="container">
+                <div id="air">現在空氣品質 <span>良好</span> PM2.5: ---</div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">:::</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">iNCCU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">網站導覽</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">郵件信箱</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">校園安全</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">English</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <div class="container">
+
+
+
+            <!-- Phone Top 1 -->
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark py-0 d-flex d-md-none">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><img class="w-25" src="images/en_bg_l.png" alt=""> EN</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+            <!-- Phone Top 2 -->
+            <nav class="navbar navbar-expand-md bg-white navbar-light d-flex flex-wrap" id="Phone-top2">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="#" id="logo"><img src="images/logo.png" alt=""></a>
+
+                <ul class="phone-top4 navbar-nav ml-auto d-md-flex d-none">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">在校學生</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">教職員工</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">校友</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">訪客</a>
+                    </li>
+
+                </ul>
+
+
+
+
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav" id="menu-bar">
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown text-center">
+                            <a class="nav-link dropdown-toggle  pl-3" href="#" id="navbardrop" data-toggle="dropdown">
+                                關於政大
+                            </a>
+                            <div class="dropdown-menu py-0">
+                                <a class="dropdown-item" href="#">本校介紹</a>
+                                <a class="dropdown-item" href="#">政大校訓</a>
+                                <a class="dropdown-item" href="#">交通資訊</a>
+                                <a class="dropdown-item" href="#">校園地圖</a>
+                                <a class="dropdown-item" href="#">年度行事曆</a>
+                                <a class="dropdown-item" href="#">影音政大</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">行政單位</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">教學單位</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">研究中心</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">資訊服務</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">招生專區</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">圖書館</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">捐政</a>
+                        </li>
+                    </ul>
+
+                    <div id="search" class="bg-dark text-white ml-auto d-md-block d-none"><i class="fa fa-search"
+                            aria-hidden="true"></i></div>
+
+                    <ul class="navbar-nav d-block d-md-none" id="menu-bar2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">:::</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">iNCCU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">網站導覽</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">郵件信箱</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">校園安全</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">English</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+        </div>
+    </div>
+
+    <div id="carousel-area" class="mt-1">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="">
+                            <img class="d-block w-100" src="images/carousel_pic_01.jpg" alt="First slide">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="">
+                            <img class="d-block w-100" src="images/carousel_pic_02.jpg" alt="Second slide">
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="phone-top4 mt-3 mb-3 d-block d-md-none">
+        <div class="container">
+            <ul class="navbar-nav d-flex flex-row justify-content-around">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">在校學生</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">教職員工</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">校友</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">訪客</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="content">
+        <div class="container">
+
+            <div class="row">
+                <!-- single news -->
+                <div class="col-12 my-2" id="banner-area">
+                    <a href="">
+                        <img class="w-100" src="images/banner.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-md-8 col-12 mb-2">
+                    <div class="row">
+                        <div class="col-lg-7 col-12 pr-lg-0">
+                            <a href=""><img class="w-100 h-100" src="images/news01.jpg" alt=""></a>
+
+                        </div>
+                        <div class="col-lg-5 col-12 pl-lg-0">
+                            <div id="single-news">
+                                <a href="">
+                                    <h6 class="mb-3">疫情趨緩 室內體育場館開放校內使用 畢業生親友則可申請入校</h6>
+                                    <div class="d-block d-sm-none d-lg-block">
+                                        <p class="mb-0">【校訊記者吳季柔報導】</p>
+                                        <p>因應新冠肺炎疫情趨緩，本校在配合防疫政策下，室內體育館和游泳池將陸續恢復校內使用。本屆畢業典禮仍維持由各系代表出席，不開放現場觀禮，採網路播映方式，供畢業生及家長線上觀禮，但擴大開放讓畢業生預先登記邀請親友入校。
+                                        </p>
+                                    </div>
+
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- school news -->
+                <div class="col-md-4 col-12 mb-2 pl-md-0">
+                    <div class="school-area">
+                        <h5 class="title-line">校園新聞</h5>
+                        <ul>
+                            <li><a class="news" href="">台灣防疫超用心 政大外籍生藉影片大讚</a></li>
+                            <li><a class="news" href="">疫情趨緩 室內體育場館開放校內使用 畢業生親友則可申請入校</a></li>
+                            <li><a class="news" href="">【93校慶】革命性突破！首度全球直播 邀請世界各地校友線上相聚</a></li>
+                            <li><a class="news" href="">【93校慶】傑出行政人員獎 校長郭明政表揚 7 位同仁</a></li>
+                            <li><a class="news" href="">【93校慶】傑出服務獎 表揚教研人員推動校務具體貢獻</a></li>
+                            <li><a class="news" href="">【93校慶】新任僑委會委員長童振源：政大是培育國家棟梁的學校</a></li>
+                        </ul>
+                        <a name="" id="" class="btn btn-light btn-sm px-3 rounded-pill float-right" href="#"
+                            role="button">更多新聞</a>
+                    </div>
+
+                </div>
+                <!-- school maps -->
+
+                <div class="col-md-8 col-12 mb-2 d-flex justify-content-center w-100" id="school-maps">
+
+                    <div class="row">
+                        <div class="col-md-2 col-4 d-flex flex-column justify-content-center px-1"><a href=""><img
+                                    class="" src="images/tab1.png" alt="">
+                                <h5 class="text-center">校園交通地圖</h5>
+                            </a></div>
+                        <div class="col-md-2 col-4 d-flex flex-column justify-content-center px-1"><a href=""><img
+                                    class="" src="images/tab2.png" alt="">
+                                <h5 class="text-center">課程手冊</h5>
+                            </a></div>
+                        <div class="col-md-2 col-4 d-flex flex-column justify-content-center px-1"><a href=""><img
+                                    class="" src="images/tab3.png" alt="">
+                                <h5 class="text-center">緊急通聯</h5>
+                            </a></div>
+                        <div class="col-md-2 col-4 d-flex flex-column justify-content-center px-1"><a href=""><img
+                                    class="" src="images/tab4.png" alt="">
+                                <h5 class="text-center">行動政大</h5>
+                            </a></div>
+                        <div class="col-md-2 col-4 d-flex flex-column justify-content-center px-1"><a href=""><img
+                                    class="" src="images/tab5.png" alt="">
+                                <h5 class="text-center">紀念品</h5>
+                            </a></div>
+                        <div class="col-md-2 col-4 d-flex flex-column justify-content-center px-1"><a href=""><img
+                                    class="" src="images/tab6.png" alt="">
+                                <h5 class="text-center">捐政</h5>
+                            </a></div>
+                    </div>
+
+                </div>
+                <!-- school notes -->
+                <div class="col-md-4 col-12 mb-2  pl-md-0">
+                    <div class="school-area">
+                        <h5 class="title-line">校園公告</h5>
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#home">在校學生</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#menu1">教職員工</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#menu2">演講</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#menu3">徵才</a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane container active" id="home">
+                                <ul>
+                                    <li><a class="news" href="">本校行政大樓聯合服務中心設立說明</a></li>
+                                    <li><a class="news" href="">109學年度國際學生申請入學錄取名單與注意事項</a></li>
+                                    <li><a class="news" href="">本校室內體育場館恢復校內開放公告！</a></li>
+                                    <li><a class="news" href="">國合處絲路電子報徵記者</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane container fade" id="menu1">
+                                <ul>
+                                    <li><a class="news" href="">本校室內體育場館恢復校內開放公告！</a></li>
+                                    <li><a class="news" href="">【線上演講】Heraclitus and the Standards of Science: A Case
+                                            for Considering Open Science Practices in Communication Science</a></li>
+                                    <li><a class="news" href="">國際關係研究中心 - 「回歸後中港關係的變遷」工作坊（視訊會議）</a></li>
+                                    <li><a class="news" href="">創新科技防疫場域驗證計畫徵求</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane container fade" id="menu2">
+                                <ul>
+                                    <li><a class="news" href="">【線上演講】Heraclitus and the Standards of Science: A Case
+                                            for Considering Open Science Practices in Communication Science</a></li>
+                                    <li><a class="news" href="">東亞所(108-2)學期「東亞論壇」(I) ：石之瑜教授專題演講</a></li>
+                                    <li><a class="news" href="">國際租稅專題演講-跨國投資架構與國際稅務趨勢</a></li>
+                                    <li><a class="news" href="">5月12日下午2:10神科所專題演講 – A miRacle/miR-196a against
+                                            Huntington’s Diseas</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane container fade" id="menu3">
+                                <ul>
+                                    <li><a class="news" href="">政大英文系誠徵四職等行政專員一名-內補</a></li>
+                                    <li><a class="news" href="">政大英文系誠徵四職等行政專員一名-外補</a></li>
+                                    <li><a class="news" href="">商學院信義書院徵才 (外補)</a></li>
+                                    <li><a class="news" href="">商學院信義書院徵才 (內補)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a name="" id="" class="btn btn-light btn-sm px-3 rounded-pill float-right mb-2" href="#"
+                            role="button">更多新聞</a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row px-0">
+                        <div class="col-12 px-md-0">
+                            <div id="carousel-area2" class="mt-1">
+                                <div class="container">
+                                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carouselExampleIndicators2" data-slide-to="0"
+                                                class="active"></li>
+                                            <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <a href="">
+                                                    <img class="d-block w-100" src="images/carousel2_pic_01.jpg"
+                                                        alt="First slide">
+                                                </a>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <a href="">
+                                                    <img class="d-block w-100" src="images/carousel2_pic_02.jpg"
+                                                        alt="Second slide">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-12 link-icon"><a href=""><img src="images/icon1.png" alt="">政大雄鷹籃球隊</a></div>
+                        <div class="col-xl-4 col-12 link-icon"><a href=""><img src="images/icon2.png" alt="">NCCU Youtube</a>
+                        </div>
+                        <div class="col-xl-4 col-12 link-icon"><a href=""><img src="images/icon3.png" alt="">NCCU Facebook</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 pl-md-0 mt-1">
+                    <div class="row">
+                        <div class="col-12">
+                            <img class="w-100" src="images/mobilead_56_232329_20464.jpg" alt="">
+                        </div>
+                        <div class="col-12" id="calendar-area">
+                            <div class="row ">
+                                <div class="col-12">
+                                    <h5 class="text-center">活動行事曆</h5>
+                                </div>
+                                <div class="col-3"></div>
+                                <div class="col-9">
+                                    <a href="">
+                                        <p class="calendar-title">駐校展覽《藝書藝色》專家導覽（三）</p>
+                                        <p class="calendar-time">109/05/27(三）12:10</p>
+                                    </a>
+                                    <a href="">
+                                        <p class="calendar-title">【寫作中心講座】踏出第一步——中文學術寫作基本原則</p>
+                                        <p class="calendar-time">109/05/28 18:30-20:30</p>
+                                    </a>
+                                    <a href="">
+                                        <p class="calendar-title">第39屆道南文學獎決審會議(新詩、散文組)</p>
+                                        <p class="calendar-time">109/05/29 9:20~12:10</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <a class="btn btn-light btn-sm px-3 rounded-pill float-right mb-2 mr-3" href="#"
+                                role="button">更多內容</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-7 col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5 class="w-100 border-bottom py-2">:::</h5>
+                        </div>
+                        <div class="col-md-2 col-0 mt-2 d-none d-md-block">
+                            <img src="images/bt_logo_tw.png" alt="">
+                        </div>
+                        <div class="col-md-10 col-12 mt-2" id="contact">
+                            <p>總機電話：02-29393091 傳真：02-29379611</p>
+                            <p>地址：116302 臺北市文山區指南路二段64號 （如何到政大）</p>
+                            <p>緊急事件通聯窗口（24小時）：學安中心（校安中心）0919099119（校內分機 66119）</p>
+                            <p>駐警隊02-29387129（校內分機66110）</p>
+                        </div>
+                        <div class="col-12 p-5">
+                            <div class="row">
+                                <div class="footer-link col border text-center mx-1"><a class=" p-2 text-white text-center" href="">防制學生藥物濫用資源網</a></div>
+                                <div class="footer-link col border text-center mx-1"><a class=" p-2 text-white text-center" href="">科技大觀園</a></div>
+                                <div class="footer-link col border text-center mx-1"><a class=" p-2 text-white text-center" href="">交通安全e網通</a></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-5 col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5 class="w-100 border-bottom py-2">相關連結</h5>
+                        </div>
+                        <div class="col-md-6 col-12 mb-2"><a class="other-link" href="">政大地方創生平台</a></div>
+                        <div class="col-md-6 col-12 mb-2"><a class="other-link" href="">單位暨人事查詢</a></div>
+                        <div class="col-md-6 col-12 mb-2"><a class="other-link" href="">藝文中心節目</a></div>
+                        <div class="col-md-6 col-12 mb-2"><a class="other-link" href="">校園接駁公車時刻表</a></div>
+                        <div class="col-md-6 col-12 mb-2"><a class="other-link" href="">校務暨財務公開專區</a></div>
+                        <div class="col-md-6 col-12 mb-2"><a class="other-link" href="">選課系統</a></div>
+                        <div class="col-md-6 col-12 mb-2"><a class="other-link" href="">掛號郵件查詢</a></div>
+                        <div class="col-md-6 col-12 mb-2"><a class="other-link" href="">全校課程查詢</a></div>
+                        <div class="col-md-6 col-12 mb-2"><a class="other-link" href="">校務建言</a></div>
+                        <div class="col-md-6 col-12 mb-2"><a class="other-link" href="">宿舍郵局包裹信件查詢</a></div>
+                        <div class="col-md-6 col-12 mb-2"><a class="other-link" href="">性別平等教育委員會</a></div>
+                        <div class="col-md-6 col-12 mb-2"><a class="other-link" href="">年度行事曆</a></div>
+                        <div class="col-12">
+                            <img src="images/aa_140.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-dark text-white" id="copyright-area">
+        <div class="container d-flex flex-wrap">
+            本網站著作權屬於國立政治大學 |<a class="mx-2 text-white" href="">尊重智慧財產權</a>|<a class="mx-2 text-white" href="">網路使用規範要點</a> 
+            <img src="images/en_bg_l.png" alt="">您的連線方式為:IPV6
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

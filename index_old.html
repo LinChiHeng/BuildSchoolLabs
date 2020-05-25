@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-hant" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Henry's Build School Labs</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "Noto Sans TC", sans-serif;
+        }
+
+        img {
+            width: 100%;            
+        }
+        #ImgGroup2 div{
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        #ImgGroup2 img{
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        
+    </style>
+
+
+<script>
+    // doc ready
+    $(function () {
+        init();
+    });
+
+    function init() {
+        $('#ImgGroup2 img').hover(Mouse_over, Mouse_out);        
+    }
+
+    function Mouse_over() {
+        $(this).css("cursor", "pointer");
+        $(this).css("transform", "scale(1.05)").css("transition-duration", "0.1s")
+    }
+
+    function Mouse_out() {
+        $(this).css("transform", "scale(1)").css("transition-duration", "0.1s")
+    }
+
+
+</script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Henry's Build School 作品集</a>
+          </div>
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item">
+                <a class="nav-link" href="#Footer">聯繫 Henry</a>
+            </li>            
+          </ul>
+        </div>
+      </nav>
+    
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 80%;margin: 10px auto;">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="https://ledershop.azurewebsites.net/Home/Index"><img src="image/Leder1.png" alt="winpic1" style="width: 100%"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="https://ledershop.azurewebsites.net/Home/Index"><img src="image/Leder2.png" alt="winpic2" style="width: 100%"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="https://ledershop.azurewebsites.net/Home/Index"><img src="image/Leder3.png" alt="winpic3" style="width: 100%"></a>
+            </div>
+        </div>       
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
+    <div style="text-align: center;font-size: 30px;margin-top: 20px;">
+        <a href="https://ledershop.azurewebsites.net/Home/Index">電商網站專題：Leder皮件店</a>
+    </div>
+
+    <div id="ImgGroup2" class="row" style="margin:10px; padding-top:80px;text-align: center;">       
+        <div class="col-4">
+            <a href="Calendar 行事曆/index.html"><img src="image/project01.png" style="width:100%;height:80%;" class="img-responsive" /></a>
+            <a href="Calendar 行事曆/index.html">Calendar 行事曆</a>
+        </div>
+        <div class="col-4">
+            <a href="Puzzlegames 拼圖遊戲/index.html"><img src="image/project02.png" style="width:100%;height:80%;" class="img-responsive" /></a>
+            <a href="Puzzlegames 拼圖遊戲/index.html">Puzzlegames 拼圖遊戲</a>
+        </div>
+        <div class="col-4">
+            <a href="UbikeGoogleMapAPI/index.html"><img src="image/project03.png" style="width:100%;height:80%;" class="img-responsive" /></a>
+            <a href="UbikeGoogleMapAPI/index.html">Ubike Google Map API</a>
+        </div>
+        <div class="col-4">
+            <a href="GuessNumber 1A2B猜數字遊戲/guess-number.html"><img src="image/project04.png" style="width:100%;height:80%;" class="img-responsive" /></a>
+            <a href="GuessNumber 1A2B猜數字遊戲/guess-number.html">1A2B猜數字遊戲</a>
+        </div>
+        <div class="col-4">
+            <a href="LifeNumber 星座與生命靈數/index.html"><img src="image/project05.png" style="width:100%;height:80%;" class="img-responsive" /></a>
+            <a href="LifeNumber 星座與生命靈數/index.html">星座與生命靈數算命網站</a>
+        </div>
+        <div class="col-4">
+            <a href="CardGame 卡牌比大小遊戲/index.html"><img src="image/project06.png" style="width:100%;height:80%;" class="img-responsive" /></a>
+            <a href="CardGame 卡牌比大小遊戲/index.html">卡牌比大小遊戲</a>
+        </div>
+        <div class="col-4">
+            <a href="AddressBookWithTags 通訊錄/index.html"><img src="image/project07.png" style="width:100%;height:80%;" class="img-responsive" /></a>
+            <a href="AddressBookWithTags 通訊錄/index.html">通訊錄</a>
+        </div>        
+        <div class="col-4">
+            <a href="SinyiWebsite 信義房屋官網復刻/index.html"><img src="image/project09.png" style="width:100%;height:80%;" class="img-responsive" /></a>
+            <a href="SinyiWebsite 信義房屋官網復刻/index.html">信義房屋官網首頁復刻</a>
+        </div>
+        <div class="col-4">
+            <a href="BuildSchoolWebsite BS官網復刻/index.html"><img src="image/project10.png" style="width:100%;height:80%;" class="img-responsive" /></a>
+            <a href="BuildSchoolWebsite BS官網復刻/index.html">Build School官網復刻</a>
+        </div>        
+    </div>
+
+    <nav id="Footer" class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <div class="navbar-header">                
+              </div>
+              <ul class="nav navbar-nav">              
+              </ul>              
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a class="nav-link">連絡電話：0933743722</a>
+            </li> 
+            <li>
+                <a class="nav-link">Email：chlin97701021@gmail.com</a>
+            </li>           
+          </ul>
+        </div>
+      </nav> 
+
+</body>
+
+</html>
